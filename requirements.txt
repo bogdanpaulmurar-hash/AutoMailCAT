@@ -1,0 +1,6 @@
+# AutoMailCAT needs Python 3.10+ on Windows.
+# Classic Outlook through COM (required for the real mailbox; --demo works without it):
+pywin32>=306
+# Optional, for the icon next to the Windows clock:
+pystray>=0.19
+Pillow>=10.0

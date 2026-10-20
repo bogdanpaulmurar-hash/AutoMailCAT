@@ -1,0 +1,25 @@
+{
+  "name": "AutoMailCAT",
+  "description": "Assigns the mails of a shared Outlook mailbox to the team",
+  "glyph": "E715",
+  "pythonModule": "",
+  "arguments": "",
+  "autoStartArguments": "--tray",
+  "noTrayArguments": "--no-tray",
+  "processMatch": "automailcat.py",
+  "healthUrl": "http://127.0.0.1:8767/api/status",
+  "actions": [
+    { "label": "Open", "glyph": "E774", "kind": "Url", "value": "http://127.0.0.1:8767/", "featured": true },
+    { "label": "Today / confirm the day", "glyph": "E787", "kind": "Url", "value": "http://127.0.0.1:8767/#/today", "featured": true },
+    { "label": "Rules", "glyph": "E8FD", "kind": "Url", "value": "http://127.0.0.1:8767/#/rules" },
+    { "label": "Journal", "glyph": "E81C", "kind": "Url", "value": "http://127.0.0.1:8767/#/journal" },
+    { "kind": "Separator" },
+    { "label": "Process now", "glyph": "E72C", "kind": "Arguments", "arguments": "--action sweep", "section": "Engine" },
+    { "label": "Pause", "glyph": "E769", "kind": "Arguments", "arguments": "--action pause", "section": "Engine" },
+    { "label": "Resume", "glyph": "E768", "kind": "Arguments", "arguments": "--action resume", "section": "Engine" },
+    { "label": "Send the daily message again", "glyph": "E724", "kind": "Arguments", "arguments": "--action report", "section": "Engine" },
+    { "kind": "Separator" },
+    { "label": "Try the demo", "glyph": "E7BE", "kind": "Command", "value": "{ToolDir}\\start-demo.bat" },
+    { "label": "Log folder", "glyph": "E8B7", "kind": "Folder", "value": "{LocalAppData}\\AutoMailCAT\\logs" }
+  ]
+}
