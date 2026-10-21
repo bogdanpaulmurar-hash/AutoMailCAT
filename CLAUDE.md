@@ -8,3 +8,9 @@
 - Users are non-technical: settings are chosen in the interface (drop-downs, checkboxes), never by editing JSON.
 - Code, comments and commit messages in English; replies to the user in Romanian.
 - Tests: `python -m unittest discover -s tests -t .`; manual run without Outlook: `python automailcat.py --demo --no-tray`.
+
+## Shared context
+Project overview and open bugs/changes live in two Google Docs: **PROIECTE_CONTEXT (live)** and **MODIFICARI_PROIECTE (live)** — read only the AutoMailCAT section. Remove items from MODIFICARI once implemented and confirmed.
+
+## Keep this file current
+Update it in the same commit when: install/test/run commands change, a module is added/moved, the DevPilot integration changes, or a bug teaches a rule worth remembering. Not for ordinary features. Keep it under ~60 lines.
